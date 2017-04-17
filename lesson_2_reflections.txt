@@ -6,16 +6,20 @@ How is the staging area different from the working directory and the repository?
 
 	The staging area is a tempory repository where the user can use `git status` to see what files in the repository are being tracked and which ones aren't. This is useful since you know what files are going to be affected by the commit. 
 
-How can you use the staging area to make sure you have one commit per logical
-change?
+How can you use the staging area to make sure you have one commit per logical change?
 
-What are some situations when branches would be helpful in keeping your history
-organized? How would branches help?
+	Files can be moved into and out of the staging area separately so a change in one won't necessarily mean a change to another unless the developer specifically means to do so.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+	When the devloper would want to experiment possible code breaking features, or make a spinoff or sister program that fills another niche using similiar code.
 
 How do the diagrams help you visualize the branch structure?
 
-What is the result of merging two branches together? Why do we represent it in
-the diagram the way we do?
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
-What are the pros and cons of Git’s automatic merging vs. always doing merges
-manually?
+	Two files that can keep each other's changes automatically if the changes work together. Otherwise a conflict will arise and the manually tweaking of the conflicting parts of the code (which is highlighted by git) will be necessary before the merging can continue.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+	Pros: When it works, and the developer is knowledgable about the two different version of code, then automatic seems like right choice.
